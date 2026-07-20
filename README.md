@@ -173,7 +173,25 @@ Send your prompt and let the Replit agent build!
 > 💡 Remember
 > Remember what we talked about in our previous sessions about clarity, feedback, and focus? Make sure to keep those in mind when prompting!
 
-## Milestone 6 — Test and Improve
+
+## Milestone 7 — Connect a Database with Supabase
+
+Now that your app works end to end, give it persistence by connecting it to a Supabase database.
+
+What this means: instead of losing all results and history when the app restarts, your data (agent outputs, user inputs, combined history, etc.) gets saved to and read from a real database.
+
+Steps:
+
+- Create a Supabase project and connect it to your app that the Replit Agent created - for more detailed instructions refer back to the slides.
+
+### Database Checklist
+
+- [ ] Supabase project and tables are created.
+- [ ] Backend successfully writes data to Supabase.
+- [ ] Backend successfully reads data back from Supabase.
+- [ ] Data still exists after restarting the app.
+
+## Milestone 8 — Test and Improve
 
 Test your complete application like a real user.
 
@@ -183,5 +201,5 @@ When you find a problem, fix one issue at a time and test again.
 
 Continue improving your prompts, backend, and frontend until the entire system works reliably.
 
-Once you reach this stage, deploy your web app: click on the publish button in Bolt so your project goes live!
+Once you reach this stage, deploy your web app: click on the publish button in Replit Agent so your project goes live!
 
