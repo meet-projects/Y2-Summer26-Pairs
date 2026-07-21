@@ -6,8 +6,8 @@ damian_history = []
 while True:
 
     print("\n========== THEATER ASSISTANT ==========")
-    print("1 - Damian")
-    print("2 - Heather")
+    print("1 - Damian,your personal theater assistant")
+    print("2 - Heather,your event coordinator. links you to tickets based on your conversation with Damian")
     print("3 - Exit")
 
     choice = input("\nChoose an option: ")
