@@ -1,4 +1,6 @@
 import os
+import certifi
+import httpx
 from anthropic import Anthropic
 from dotenv import load_dotenv
 
@@ -45,7 +47,15 @@ api_key = os.getenv("ANTHROPIC_API_KEY")
 
 print("API KEY FOUND:", api_key is not None)
 
-client = Anthropic(api_key=api_key)
+client = Anthropic(
+    api_key=api_key,
+    http_client=httpx.Client(
+        verify=certifi.where(),
+        trust_env=False
+    )
+) 
+print("USING CUSTOM ANTHROPIC CLIENT")
+
 
 
 # Conversation memory
@@ -65,6 +75,11 @@ def run_agent(user_input):
             "content": user_input
         }
     )
+
+    print(client)
+    print(type(client))
+    print(client._client)
+
 
 
     response = client.messages.create(
