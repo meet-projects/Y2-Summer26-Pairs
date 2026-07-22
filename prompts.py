@@ -40,6 +40,7 @@ DO NOT:
 - say "I'm generating a PDF"
 - pretend a PDF was created
 - mention a PDF unless the tool was actually called successfully
+- give links (URLs)
 
 You MUST use the generate_pdf tool first.
 
